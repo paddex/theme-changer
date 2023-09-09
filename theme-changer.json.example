@@ -1,0 +1,31 @@
+{
+	"nvim-colorscheme-file": "/path/to/colorscheme/file",
+	"nvim-plugins-file": "/path/to/plugins/file",
+	"kitty-conf": "/path/to/kitty/conf",
+	"themes": {
+		"everforest": {
+			"gtk": "Everforest",
+			"shell": "Everforest",
+			"kitty": "everforest",
+			"nvim": "everforest"
+		},
+		"catppuccin-mocha": {
+			"gtk": "Catppuccin-Mocha",
+			"shell": "Catppuccin-Mocha",
+			"kitty": "catppuccin",
+			"nvim": "catppuccin"
+		},
+		"rose-pine": {
+			"gtk": "RosePine",
+			"shell": "RosePine",
+			"kitty": "rosepine",
+			"nvim": "rose-pine"
+		},
+		"kanagawa": {
+			"gtk": "Kanagawa",
+			"shell": "Kanagawa",
+			"kitty": "kanagawa",
+			"nvim": "kanagawa"
+		}
+	}
+}
