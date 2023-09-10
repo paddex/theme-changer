@@ -5,7 +5,7 @@ build:
 	@go build -o bin/theme -ldflags="-X 'paddex.net/theme-changer/cmd.commit=${COMMIT}' -X 'paddex.net/theme-changer/cmd.date=${DATE}'"
 
 install:
-	@go install
+	@go install -ldflags="-X 'paddex.net/theme-changer/cmd.commit=${COMMIT}' -X 'paddex.net/theme-changer/cmd.date=${DATE}'"
 
 clean:
 	@rm -r bin
