@@ -1,6 +1,6 @@
 {
 	"nvim-colorscheme-file": "/path/to/colorscheme/file",
-	"nvim-plugins-file": "/path/to/plugins/file",
+	"nvim-plugins-dir": "/path/to/plugins/file",
 	"kitty-conf": "/path/to/kitty/conf",
 	"themes": {
 		"everforest": {

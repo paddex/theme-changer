@@ -2,7 +2,6 @@ package util
 
 import (
 	"os"
-	"regexp"
 
 	"github.com/spf13/viper"
 )
@@ -36,13 +35,7 @@ func checkKitty(theme string) bool {
 }
 
 func checkNvim(theme string) bool {
-	pluginsFile, err := os.ReadFile(viper.GetString("nvim-plugins-file"))
-	if err != nil {
-		return false
-	}
-
-	exists, err := regexp.Match(theme, pluginsFile)
-	if err != nil || !exists {
+	if _, err := os.Stat(viper.GetString("nvim-plugins-dir") + theme + ".lua"); os.IsNotExist(err) {
 		return false
 	}
 	return true
